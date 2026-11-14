@@ -1,0 +1,22 @@
+
+body {
+background-color: #333333;
+}
+h1, 
+h2,
+h3, 
+.text-accent {
+    color: #6774FF;
+}
+border, 
+.border,
+header,
+article {
+    border-color: #6774FF;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+nav [aria-current="page"] {
+    color: #6774FF;
+}

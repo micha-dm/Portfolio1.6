@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micha De Moey - De contact gegevens van een student systeem- en netwerkbeheer</title>
+    <meta name="description" content="Contact van Micha De Moey stuur een bericht over een stage, een project of een vraag,student systeem- en netwerkbeheer aan AP Hogeschool.">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="text-gray-100">
+    <a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute z-50 top-2 left-2 bg-blue-700 text-white p-2 rounded-lg font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400">Ga naar contact</a>        
+
+    <div class="max-w-6xl mx-auto px-4">
+    <header class="flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4 py-4 border-b border-gray-200">
+        <div>
+        <input type="checkbox" id="menu-knop" class="peer sr-only">
+        <label for="menu-knop" class="inline-flex items-center justify-center p-2 border border-gray-700 rounded-lg cursor-pointer my-2 hover:bg-gray-700 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-blue-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10" aria-hidden="true"> 
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+        </label>
+        <nav class="hidden peer-checked:block w-full mt-3 md:w-auto">
+            <ul class="flex flex-col gap-4 md:gap-1">
+                <li><a href="index.html" class="block px-3 py-1 rounded-lg hover:bg-gray-700">Home<a></li>
+                <li><a href="portfolio.html" class="block px-3 py-2 rounded-lg hover:bg-gray-700">Portfolio</a></li>
+                <li><a href="project.html" class="block px-3 py-2 rounded-lg hover:bg-gray-700">Project</a></li>
+                <li><a href="contact.html" aria-current="page" class="block px-3 py-2 rounded-lg hover:bg-gray-700">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="flex items-center gap-1">
+        <img src="assets/images/logo_Licht_transparant.png" alt="Logo Micha De Moey" width="60" height="60" class="size-30 object-contain">
+        <span class="text-4xl font-bold">Micha De Moey</span>
+        </div>
+    </header>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+
+   <main id="inhoud" class="md:col-span-2">
+
+            <h1 class="text-3xl font-bold mb-2">Contact</h1>
+            <p class="mb-6">Stel je vraag over een stage of een project. Velden met een <span aria-hidden="true" class="text-red-700 font-bold">*</span> zijn verplicht.</p>
+
+            <div class="border rounded-lg p-4">
+            <form action="#" method="get" class="grid gap-x-4 gap-y-4 md:grid-cols-2">
+                
+                <div>
+                    <label for="naam" class="block font-medium mb-1">naam <span aria-hidden="true" class="text-red-700">*</span></label>
+                    <input type="text" id="naam" name="naam" required autocomplete="name" 
+                        class="w-full border rounded-lg px-3 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 peer user-invalid:border-red-700">
+                </div>
+
+                <div>
+                    <label for="email" class="block font-medium mb-1">e-mail <span aria-hidden="true" class="text-red-700">*</span></label>
+                    <input type="email" id="email" name="email" required autocomplete="email" aria-describedby="email-hulp" 
+                        class="w-full border rounded-lg px-3 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 peer user-invalid:border-red-700">
+                    <p id="email-fout" class="hidden peer-user-invalid:block mt-1 text-sm text-red-700">Dit e-mailadres klopt niet. Vul het in zoals naam@voorbeeld.be.</p>
+                    <p id="email-hulp" class="mt-1 text-sm">Vul een e-mailadres in zoals naam@voorbeeld.be.</p>
+                </div>
+
+                <div class="md:col-span-2">
+                    <label for="bericht" class="block font-medium mb-1">je bericht</label>
+                    <textarea id="bericht" name="bericht" rows="4" aria-describedby="bericht-hulp" 
+                        class="w-full border rounded-lg px-3 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 peer user-invalid:border-red-700"></textarea>
+                </div>
+
+                <div class="md:col-span-2 flex items-center gap-2">
+                    <input type="checkbox" id="toestemming" name="toestemming" required value="ja" class="size-5 accent-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                    <label for="toestemming">ik ga akkoord dat Micha mijn bericht leest <span aria-hidden="true" class="text-red-700">*</span></label>
+                </div>
+
+                <div class="md:col-span-2">
+                    <button type="submit" class="bg-blue-700 hover:bg-blue-800 font-medium px-4 py-2 rounded-lg mb-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">Verstuur</button>
+                    <p class="text-sm">Ik gebruik je gegevens enkel om je te antwoorden.</p>
+                </div>
+
+            </form>
+        </main>
+
+            <aside class="border rounded-lg p-6">
+                <div>
+                <img src="assets/images/micha_geknipt.png" alt="Profielfoto Micha" width="1200" height="800" class="size-60 object-cover rounded-lg">
+                <h2 class="text-lg font-bold mb-2">Momenteel aan het leren</h2>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur suscipit hic commodi? Aliquam explicabo sit, officia pariatur modi beatae omnis quibusdam recusandae. Nobis tempora temporibus nisi quaerat ipsum totam ad, maxime accusamus mollitia fugit hic possimus ea libero corporis distinctio ratione laudantium eligendi animi, officiis illum eius. Eveniet, velit distinctio.</p>
+                </div>
+            </aside>
+
+    </div>
+    <footer>
+        <p><small>&copy; M-De Moey</small></p>
+        <p><small>Micha.Demoey@ap.be</small></p>
+    </footer>
+    
+</body>
+</html>
