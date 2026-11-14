@@ -25,7 +25,7 @@
         </label>
         <nav class="hidden peer-checked:block w-full mt-3 md:w-auto">
             <ul class="flex flex-col gap-4 md:gap-1">
-                <li><a href="index.html" class="block px-3 py-1 rounded-lg hover:bg-gray-700">Home<a></li>
+                <li><a href="index.html" class="block px-3 py-1 rounded-lg hover:bg-gray-700">Home</a></li>
                 <li><a href="portfolio.html" class="block px-3 py-2 rounded-lg hover:bg-gray-700">Portfolio</a></li>
                 <li><a href="project.html" class="block px-3 py-2 rounded-lg hover:bg-gray-700">Project</a></li>
                 <li><a href="contact.html" aria-current="page" class="block px-3 py-2 rounded-lg hover:bg-gray-700">Contact</a></li>
@@ -45,7 +45,7 @@
             <p class="mb-6">Stel je vraag over een stage of een project. Velden met een <span aria-hidden="true" class="text-red-700 font-bold">*</span> zijn verplicht.</p>
 
             <div class="border rounded-lg p-4">
-            <form action="#" method="get" class="grid gap-x-4 gap-y-4 md:grid-cols-2">
+            <form name="contact" method="POST" data-netlify="true" class="grid gap-x-4 gap-y-4 md:grid-cols-2">
                 
                 <div>
                     <label for="naam" class="block font-medium mb-1">naam <span aria-hidden="true" class="text-red-700">*</span></label>
@@ -78,6 +78,7 @@
                 </div>
 
             </form>
+            </div>
         </main>
 
             <aside class="border rounded-lg p-6">
